@@ -11,13 +11,26 @@
     <div class="header">
         <h1>Text Translator</h1> </div>
     <div class="row">
-        <!--<img src="1000x150.png" alt=""> -->
-        <textarea class="col-12 col-m-12" rows="4" cols="50" id="clear" placeholder="Enter the text to Translate ....."></textarea>
-        <textarea class="col-12 col-m-12" rows="4" cols="50" id="translate" placeholder="Converted Text......"></textarea>
-    </div>
-    <div class="row">
-        <input type="button" value="Clear" class="col-12 col-m-12" onclick="clearTranslate()">
-        <input type="button" value="Translate" class="col-12 col-m-12" onclick="translator()"> </div>
+        <!--<form action="translate.php" method="post">
+    
+    <textarea class="col-12 col-m-12" rows="4" cols="50" name="text" id="text" placeholder="Enter the text to Translate ....."></textarea>
+    <textarea class="col-12 col-m-12" rows="4" cols="50" id="translatedText" placeholder="Converted Text......"></textarea>
+    
+    <input type="submit" value="Translate" class="col-12 col-m-12">
+    <input type="button" value="Clear" class="col-12 col-m-12" onclick="clearTranslate()"> </form>
+    -->
+    
+    <form>
+    <!--<img src="1000x150.png" alt=""> -->
+    <textarea onkeyup=" translator(this.value) " class="col-12 col-m-12" rows="4" cols="50" name="text" id="text" placeholder="Enter the text to Translate ....."></textarea>
+    
+    <textarea class="col-12 col-m-12" rows="4" cols="50" id="translatedText" placeholder="Converted Text......"></textarea>
+    <input type="submit" value="Translate" class="col-12 col-m-12" onclick="translator()">
+    
+    <input type="button" value="Clear" class="col-12 col-m-12" onclick="clearTranslate()"> </form>
+    
+    
+</div>
 </body>
 <script type="text/javascript" src="index.js"></script>
 
