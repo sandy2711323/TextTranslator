@@ -83,13 +83,13 @@ img {
     width: 100%;
     }*/
 
-    @media only screen and (max-device-width: 500px) {
+    @media only screen and (max-width: 500px) {
         body {
             background-color: white;
         }
     }
 
-    @media only screen and (min-device-width: 600px) {
+    @media only screen and (min-width: 600px) {
         /* For tablets: */
         .col-m-1 {
             width: 8.33%;
@@ -129,7 +129,7 @@ img {
         }
     }
 
-    @media only screen and (min-device-width: 768px) {
+    @media only screen and (min-width: 768px) {
         /* For desktop: */
         .col-1 {
             width: 8.33%;
